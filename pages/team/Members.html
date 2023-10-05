@@ -1,89 +1,315 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>2023-lzu-china</title>
-    <link href="../../css/bootstrap.min.css" rel="stylesheet" >
-    <script src="../../js/jquery-3.7.1.min.js"></script>    
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../js/jquery-3.7.1.min.js"></script>
     <script src="../../js/jquery.mousewheel.js"></script>
     <style>
-        body{
-            overflow-x:hidden;
+        body {
+            overflow-x: hidden;
             background-color: rgba(0, 0, 0, 0.349);
         }
     </style>
 </head>
-  <body>
+
+<body>
     <nav class="navbar" style="background-color:rgb(0, 0, 0);">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="color:white">2023-lzu-china</a>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Team</a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./pages/team/Members.html">Members</a></li>
-                <li><a class="dropdown-item" href="./pages/team/Attributions.html">Attributions</a></li>
-                </ul>
-            </li> 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Project</a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./pages/Project/Background.html">Background </a></li>
-                <li><a class="dropdown-item" href="./pages/Project/Design.html">Design </a></li>
-                <li><a class="dropdown-item" href="./pages/Project/Results.html">Results </a></li>
-                <li><a class="dropdown-item" href="./pages/Project/Future.html">Future</a></li>
-                <li><a class="dropdown-item" href="./pages/Project/Report.html">Report</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="./pages/Project/Supplementary.html">Supplementary information</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Documentation</a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./pages/Documentation/Action.html">Action</a></li>
-                <li><a class="dropdown-item" href="./pages/Documentation/Another.html">Another action</a></li>
-                <li><a class="dropdown-item" href="./pages/Documentation/Something.html">Something else here</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="./pages/Documentation/Separated.html">Separated link</a></li>
-                </ul>
-            </li>
-        </ul>
+            <a class="navbar-brand" href="#" style="color:white">2023-lzu-china</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Team</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/team/Members.html">Members</a></li>
+                        <li><a class="dropdown-item" href="./pages/team/Attributions.html">Attributions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Project</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/Project/Background.html">Background </a></li>
+                        <li><a class="dropdown-item" href="./pages/Project/Design.html">Design </a></li>
+                        <li><a class="dropdown-item" href="./pages/Project/Results.html">Results </a></li>
+                        <li><a class="dropdown-item" href="./pages/Project/Future.html">Future</a></li>
+                        <li><a class="dropdown-item" href="./pages/Project/Report.html">Report</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="./pages/Project/Supplementary.html">Supplementary
+                                information</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Documentation</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/Documentation/Action.html">Action</a></li>
+                        <li><a class="dropdown-item" href="./pages/Documentation/Another.html">Another action</a></li>
+                        <li><a class="dropdown-item" href="./pages/Documentation/Something.html">Something else here</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="./pages/Documentation/Separated.html">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
     </nav>
-<div>
-    <img src="../../static/members.jpg" class="img-fluid" alt="...">
-</div>
-<div style="margin-top: 30px;">
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            <figure class="figure">
-                <img src="../../static/yiboyu.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="width:400px;">
-                <figcaption class="figure-caption">Yibo Yu
-                    I have a wide range of interests. I love nature, starry skies, mystery, music, sports and many other things, but my favorite is 2023 LZU-China, please pay more attention to the LZU-China iDEC team, and I hope to work with you in the new year to make progress together and create another brilliant!
-                    </figcaption>
-              </figure>
-          </div>
-          <div class="col">
-            <figure class="figure">
-                <img src="../../static/zhaoyinsu.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="width:400px;">
-                <figcaption class="figure-caption">Hello, everyone! I come from the hometown of smelly and flavorful snail powder - Liuzhou, Guangxi. I am passionate about exploring this world and participating in pioneering and innovative research. In terms of honor, I have served as the head of the national college students' innovation and entrepreneurship project, published SCI papers as the first author. Swimming in the ocean of science gives me infinite joy. I am honored to be the captain of Lanzhou University iDEC team this year. Without further ado, let's create brilliance together this year!
-                </figcaption>
-              </figure>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col">
-              Column
+    <div>
+        <img src="../../static/members.jpg" class="img-fluid" alt="...">
+    </div>
+    <div style="margin-top: 30px;">
+        <h1 class="text-center">Members</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/yiboyu.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:400px;">
+                        <figcaption class="figure-caption">Yibo Yu<br>
+                            I have a wide range of interests. I love nature, starry skies, mystery, music, sports and
+                            many other things, but my favorite is 2023 LZU-China, please pay more attention to the
+                            LZU-China iDEC team, and I hope to work with you in the new year to make progress together
+                            and create another brilliant!
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/zhaoyinsu.jpg" class="figure-img img-fluid rounded img-thumbnail"
+                            alt="..." style="width:400px;">
+                        <figcaption class="figure-caption">Zhaoyin Su<br>
+                            Hello, everyone! I come from the hometown of smelly and flavorful snail powder - Liuzhou, Guangxi. I am passionate about exploring this world and
+                            participating in pioneering and innovative research. In terms of honor, I have served as the
+                            head of the national college students' innovation and entrepreneurship project, published
+                            SCI papers as the first author. Swimming in the ocean of science gives me infinite joy. I am
+                            honored to be the captain of Lanzhou University iDEC team this year. Without further ado,
+                            let's create brilliance together this year!
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
-            <div class="col">
-                Column
+            <!-- a row -->
+            <div class="row">
+                <div class="col text-center">
+                    
+                    <figure class="figure">
+                    
+                        <img src="../../static/lizhaochen.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:400px;">
+                        <figcaption class="figure-caption"> Zhaochen Li<br>
+                            I love philosophy, music and art (working on painting and guitar). I have a wide range of interests, I know a little bit about all kinds of strange things, and I love to play all kinds of games. I am also interested in biomedicine and regenerative medicine. I am very happy and excited to participate in iDEC with all of you, and I hope that we can work together to make an awesome project.
+                        </figcaption>
+                    </figure>
+                
+                </div>
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/limolan.jpg" class="figure-img img-fluid rounded img-thumbnail"
+                            alt="..." style="width:400px;">
+                        <figcaption class="figure-caption">Molan Li<br>
+                            I am a funny girl, I am happy to discover and explore diligently. I am passionate about badminton, volleyball, table tennis, basketball and other sports. I also like music, photography. "Cooperation is like an orchid, raising its fragrance. Pick and admire it, win together in all directions." I am honored to join iDEC, and look forward to our joint efforts to create another success.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- a row -->
+            <div class="row">
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/wangmingyu.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:400px;">
+                        <figcaption class="figure-caption">Mingyu Wang<br>
+                            I may seem to have an impatient personality, but I am actually calm. I have wider interests and like to try different things. Because I like music and dance, I fell in love with musical theater. I have an excellent ability to accept strange things, and I like to daze and ramble, so don't be surprised if I go crazy one day. I have the patience and confidence to explore the world's infinite possibilities with you all.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/zhangwenyu.jpg" class="figure-img img-fluid rounded img-thumbnail"
+                            alt="..." style="width:400px;">
+                        <figcaption class="figure-caption">Wenyu Zhang<br>
+                            Hello everyone, I am a diligent laboratory worker, good at pipetting gun ignition. I am very happy to join LZU-China as a member of the experimental group. I hope to make progress with you in this iDEC competition and achieve better results!
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- a row -->
+            <div class="row">
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/lizihan.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:400px;">
+                        <figcaption class="figure-caption">Zihan Li<br>
+                            Hello, i'm Li Zihan from Suzhou, Jiangsu Province. I'm a member of LZU-CHINA 2023. I like to walk in the sun on a clear afternoon, and I like to walk in the silence of the morning after a rain. I like all kinds of introspection or searching for the essence. I hope I can play my part in the LZU-China team and work together!
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/xumengwei.jpg" class="figure-img img-fluid rounded img-thumbnail"
+                            alt="..." style="width:400px;">
+                        <figcaption class="figure-caption">Mengwei Xu<br>
+                            I come from Yantai, Shandong Province. My major is visual communication design. I am lively, cheerful, optimistic and motivated. I like drawing and writing to enrich my life. I hope I can play my skills in the team and add luster to LZU-CHINA. New here, please give me your advice.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- a row -->
+            <div class="row">
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/kangweihan.png" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:400px;">
+                        <figcaption class="figure-caption">WeiHan Kang<br>
+                            Literate and martial, Internet surfing master, typing speed 150wpm, can play tennis with a broom handle, good at wearing surgical sterile gloves, once skipped class to see the campus singer competition as a photographer. I hope I can do something fun with you guys.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/wangxiangyu.jpg" class="figure-img img-fluid rounded img-thumbnail"
+                            alt="..." style="width:400px;">
+                        <figcaption class="figure-caption">Xiangyu Wang<br>
+                            Hello everyone, I come from Sanmenxia City, Henan Province, the birthplace of Taoist culture. I like to look at things and the underlying laws of social operation from a philosophical perspective, and I am also keen to explore various mysteries of human diseases. In life, I love badminton, table tennis and other sports, and have a strong interest in ballroom dancing. I am very happy to join iDEC, and I hope I can make a small contribution to it!
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- a row -->
+            <div class="row">
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/wangweining.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:400px;">
+                        <figcaption class="figure-caption">Weining Wang <br>
+                            I like photography, I like traveling, I like Tarot, I like to explore all kinds of interesting things in the world. Time is long, but with love, we can go to the sea of stars together. I hope I can contribute my strength in the team and go forward with you hand in hand!
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/weihui.jpg" class="figure-img img-fluid rounded img-thumbnail"
+                            alt="..." style="width:250px;">
+                        <figcaption class="figure-caption">Hui Wei <br>
+                            I am Wei Hui from Guangdong Province. My major is Stomatology and my minor is colorful. I hope that I dare to venture and create, can do nail beauty to be myself, but also can wear surgical gloves to be rigorous doctor; I can bury my head in professional textbooks, and I can also look up and type computer code. With a great team and a determination to win, here we come iDEC!
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- a row -->
+            <div class="row">
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/luoyuejuan.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:400px;">
+                        <figcaption class="figure-caption">Yuejuan Luo<br>
+                            Hi, I'm Luo Yuejun, from the First Clinical Medical College, clinical medicine major. I love life and enjoy life. I like to enjoy various styles of music in bed late at night (taytay is my favorite). I am a happy planet native who is keen to explore all the interesting things. I hope to work hard with you and move forward!
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure">
+                        <img src="../../static/jiaxiaotong.jpg" class="figure-img img-fluid rounded img-thumbnail"
+                            alt="..." style="width:400px;">
+                        <figcaption class="figure-caption">Xiaotong Jia<br>
+                            I like painting, I like traveling, I like movies, I like novels. I love everything that lives. I hope I can do my best.
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
-      </div>
+        <h1 class="text-center">Advisor</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 text-center">
+                    <figure class="figure">
+                        <img src="../../static/yangqi.png" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:250px;">
+                        <figcaption class="figure-caption">Qi Yang<br>
+                            
+                        Hello, my name is Qi Yang, and I am a PhD candidate of the class 2022 of Microbiology in the School of Life Sciences. My research direction is probiotics and intestinal health. I hope I can help you this year and make progress with you.
 
-</div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+        <h1 class="text-center">Professional Instructors</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 text-center">
+                    <figure class="figure">
+                        <img src="../../static/lixiangkai.png" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:250px;">
+                        <figcaption class="figure-caption">Xiangkai Li<br>
+                            
+                            Xiangkai Li, Professor. Main research interests: The interaction between the structure and function of contaminated microbial communities and the surrounding environment in Lanzhou section of the Yellow River; Isolation, functional molecular mechanism identification and application prospect of contaminated microorganisms in Lanzhou section of Yellow River; Microbial fuel cell coupled with membrane bioreactor to treat wastewater; Development and utilization of material energy in western China and the Belt and Road region. The main collaborating laboratories are from: University of Oklahoma, University of Calabria, Tsinghua University, Wuhan University, Nanjing Institute of Geography and Limnology, Chinese Academy of Sciences, Gansu Academy of Membrane Science.
+
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+            <div class="col-3"></div>
+                <div class="col-6 text-center">
+                    <figure class="figure">
+                        <img src="../../static/liuyatao.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..."
+                            style="width:250px;">
+                        <figcaption class="figure-caption">Yatao Liu<br>
+                            
+                            Yatao Liu, chief physician, Secretary of the second Party General Branch of the First Hospital of Lanzhou University, Director of the Foreign Cooperation and Exchange Office of the First Hospital of Lanzhou University, Deputy director of the Trauma Center of the First Hospital of Lanzhou University, deputy director of the Department of Anesthesia Surgery of the First Hospital of Lanzhou University (presiding over the work), director of the first Department of anesthesia Surgery and secretary of the Party branch of anesthesia Surgery, professional master's degree supervisor.
+
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-3"></div>
+            </div></div>
+        </div>
+
+
+    <div style="max-width:100%;">
+        <footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-white">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-8 col-xs-12">
+                        <h4 class="mb-3">About Us</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12 text-center">
+                                <img src="../../static/logo-lzu.png" height="100px" class="mr-4">
+                                <a>Lanzhou University</a>
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
+                                <img src="../../static/logo-scol.png" height="100px" class="mr-4">
+                                <a>School of Life Science , LZU</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-xs-12">
+                        <h4 class="mt-lg-0 mt-sm-4 mb-3">Contact</h4>
+                        <p>No. 222, Tianshui South Road, Chengguan District, Lanzhou City, Gansu Province,730000, P. R.
+                            China.</p>
+                        <p><b>E-mail:</b> <a href="mailto:susu2969@foxmail.com">susu2969@foxmail.com</a></p>
+                    </div>
+                </div>
+                <hr>
+        </footer>
+
+    </div>
 </body>
+
+</html>
