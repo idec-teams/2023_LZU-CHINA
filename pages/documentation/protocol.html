@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2023-lzu-china</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/jquery.mousewheel.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+            background-color: rgba(0, 0, 0, 0.349);
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+
+        .main{
+            margin-top: 30px;
+        }
+        /* 设置左侧目录 */
+        #list-example{
+            position:sticky;
+            top:20px;
+        }
+        /* 右侧内容 */
+        .col-8{
+            
+        }
+    </style>
+    <!-- 导航栏 -->
+    <nav class="navbar" style="background-color:rgb(0, 0, 0);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color:white">2023-lzu-china</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Team</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Members.html">Members</a></li>
+                        <li><a class="dropdown-item" href="#">Attributions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Project</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/project/background.html">Background </a></li>
+                        <li><a class="dropdown-item" href="./pages/project/design.html">Design </a></li>
+                        <li><a class="dropdown-item" href="./pages/project/results.html">Results </a></li>
+                        <li><a class="dropdown-item" href="./pages/project/future.html">Future</a></li>
+                        <li><a class="dropdown-item" href="./pages/project/report.html">Report</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="./pages/Project/supplementary.html">Supplementary
+                                information</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Documentation</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/documentation/protovol.html">Protovol</a></li>
+                        <li><a class="dropdown-item" href="./pages/documentation/notebook.html">Notebook</a></li>
+                        <li><a class="dropdown-item" href="./pages/documentation/safety.html">Safety</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="./pages/Documentation/Separated.html">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+
+    <!--  本页内容 -->
+<div class="main">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-3">
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">1. Strain culture</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">2. construction of engineering bacteria</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">3. Detection methods</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">4. functional verification</a>
+            </div>
+            </div>
+            <div class="col-8" style="border-left:10px solid #000000;">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">1. Strain culture</h4>
+                    <div class="container">
+                        <div>
+                            <p>1. Basal Cholesterol Medium (BCM)</p>
+                            <div class="container">
+                                Experimental material and concentration
+                                <br>BCM formula
+                                <br>* casitone: 10g /L
+                                <br> * Yeast extract: 10g /L
+                                <br> * Cholesterol: 2g/L (as appropriate)
+                                <br> * Sodium thioglycolate: 0.5g/L
+                                <br>  * CaCl2⋅2H2O: 1g/L
+                                <br> Experimental procedure:
+                                <br> 1. The BCM formula drug (excluding cholesterol) is calculated and weighed according to the required volume according to its proportion and mixed in a conical bottle with ultra-pure water for constant volume. BCM mother liquor was obtained.
+                                <br> 2. Wrap the prepared BCM mother liquor with a conical bottle sealing film and sterilize it at 121℃ for 20 min.
+                                <br>  3. Use the ultrafiltration membrane in the sterile table to filter the concentration of cholesterol mother liquid required for bacteria removal.
+                                <br>  4. Add cholesterol mother liquor to BCM mother liquor according to the required concentration before use to obtain BCM medium.
+                            </div>                            
+                        </div>
+
+
+                        <div>
+                            <p>2.M9 medium</p>
+                            <div class="container"></div>
+                               Experimental material and concentration
+                            <br>    *1 mol/L MgSO4
+                            <br>   *1 mol/L CaCl2
+                            <br>    *5×M9 salt solution: Na2HPO4•12H2O 4.06g; KH2PO4 1.96g; NaCl 0.5g; NH4Cl 1.0g;
+                            <br>   200 mL ultra-pure water dissolved constant capacity.
+                            <br>    *0.5 g/L glucose solution
+                            <br>   Note: Add bile salt, cholesterol, or adjust glucose as needed
+                            <br>    Experimental procedure:
+                            <br>   1.M9 medium 500 mL system: Liquid A 1 mL; B liquid 0.05mL; C liquid 100 mL; D liquid 10 mL; Sterilized ultrapure water to 500mL.
+                            <br>   2. Liquid A is 1 mol/L MgSO4; Liquid B is 1 mol/L CaCl2; Liquid C is a 5×M9 salt solution; Liquid D is 0.5 g/L glucose solution.
+                            <br>   3. With the prepared ABCD solution, the ABC solution was sterilized by high-pressure steam at 121℃ for 20min, and the D solution was sterilized by UV for 30min.
+                            <br>  4. After the sterilization is finished, the reagent temperature is cooled to near room temperature and the reagent is mixed according to the M9 medium system. 
+ 
+                        </div>
+
+                        
+                        <div>
+                            <p>3.MRS Medium</p>
+                            <div class="container">Experimental material and concentration
+                                <br>*MRS Broth powder
+                                <br>   Experimental procedure:
+                                <br>   1. According to the proportion of MRS Broth powder, configure MRS Medium according to the required volume.
+                                <br>   2. Wrap the configured MRS With the conical bottle sealing film and sterilize it at 121℃ for 20 min.
+                                </div>
+
+                        </div>
+
+                        
+                        <div>
+                            <p>4.MRS Solid identification medium</p>
+                            <div class="container">Experimental material and concentration
+                                <br>  *MRS Broth powder
+                                <br>  * Sodium taurine cholate 3 g/L
+                                <br>   * Calcium chloride 0.37 g/L
+                                <br>   * AGAR 15g/L
+                                <br>   Experimental procedure:
+                                <br>  1. Configure MRS Solid identification medium according to the required volume according to the explained proportion of MRS Broth powder and the proportion of remaining components.
+                                <br>  2. Wrap the configured MRS With the conical bottle sealing film and sterilize it at 121℃ for 20 min. When it is not hot and not set, pour the plate immediately.
+                                
+                                </div>
+
+                        </div>
+
+                        
+                        <div>
+                            <p>5.LB medium</p>
+                            <div class="container">
+                                Experimental material and concentration
+                                <br>* Tryptone 10g/L
+                                <br>* Yeast powder 5g/L
+                                <br>* Sodium chloride 10g/L
+                                <br>pH regulation
+                                <br>* Sodium hydroxide
+                                <br>Solid medium requirement
+                                <br>* AGAR 15g/L
+                                <br>Experimental procedure:
+                                <br>1. Configure the medium according to the LB medium formula and set the volume with ultra-pure water.
+                                <br>2. Wrap the configured LB with a conical bottle sealing film and sterilize it at 121℃ for 20 min. If the solid medium is not hot and not solidified, pour the plate immediately. If it is ampicillin antibiotic medium, 0.5ul/ml of ampicillin antibiotic should be added, and the time to add solid medium is before pouring plate (careful of ampicillin high-temperature decomposition).
+                                           
+                                </div>
+
+                        </div>
+
+                        
+                        <div>
+                            <p>6. Cultivation conditions</p>
+                            <div class="container"><br>Basic culture method
+                                <br> 1. Culture was performed in a 25 cm2 flask (Corning, USA) at 37°C with 5% CO2.
+                                <br>2. Culture in a conical bottle at 37°C with 5% CO2.
+                                <br>3. Culture in a test tube at 37°C with 5% CO2.
+                                <br>4. Culture at 37°C with 5% CO2 using a coating plate.
+                                <br>5. Culture forms include incubator culture and shaking bed culture.
+                                <br>Anoxic culture
+                                <br>Bacteria are cultured statically in an anaerobic bag containing oxygen indicator (Hopebiol, China).
+                                </div>
+
+                        </div>
+
+                        
+                        <div>
+                            <p>7. Passage, activation, propagation and preservation of strains</p>
+                            <div class="container"><br>Passage of strains:
+                                <br>100ul strains cultured in 5ml medium were removed and cultured in a new 5ml medium.
+                                <br>
+                                <br>Activation of strain
+                                <br>The strains were cultured overnight after passage
+                                <br>The overnight bacterial solution of 1% of the volume of the new medium was transferred into the new medium and cultured for 3h.
+                                <br>Or the frozen strain was activated by taking 100ul in 5ml medium
+                                <br>                                
+                                <br>Propagation of strains
+                                <br>Pick up the bacteria or absorb 100ul of bacteria solution
+                                <br>Culture at 37℃ in 3~5ml required medium.
+                                <br>                                
+                                <br>Preservation of strains
+                                <br>Take the activated bacterial solution
+                                <br>Glycerin is made with glycerin: bacterial liquid =1:1 storage mixture, stored at -80℃.
+                                </div>
+
+                        </div>
+
+
+
+                </div>
+                <h4 id="list-item-2">2. construction of engineering bacteria</h4>
+                <div class="container">
+                    <div>
+                        <p>1. Preparation of receptive cells</p>
+                        <div class="container">
+                            <br>Experimental material
+                            <br>* Receptor Strain (EcN)
+                            <br>* LB medium
+                            <br>* 0.1M calcium chloride
+                            <br>preserve
+                            <br>* 30% glycerin
+                            <br>Experimental procedure:
+                            <br>The strain was activated by overnight culture
+                            <br>100ul of overnight activated bacterial solution was transferred to 100 mL of liquid LB and cultured for 2 h until OD was 0.5-0.6. Then pack the bacterial solution into 50 mL centrifuge tube (25 mL per tube) and precool the centrifuge at 4℃.
+                            <br>Centrifuge at 4000g for 10 minutes, discard the supernatant and add 20 mL0.1M CaCl2(5mL per tube) to the ice bath for 30 minutes per 100ml of the initial bacterial solution
+                            <br>Centrifuge, discard supernatant, add 1mL 15% 0.1M CaCl per tube (add 4 ml per 100 ml initial bacterial solution). Pack on ice into 1.5mL centrifuge tubes, 100 microliters each. For the preservation of receptive cells, 1ml of the mixture of calcium chloride and 30% glycerol (1:1) should be added and then subpackaged, and finally stored in the -80C refrigerator.
+                     </div>                            
+                     <div>
+                        <p>2. Plasmid transformation</p>
+                        <div class="container">
+                            <br>Experimental material
+                            <br>   * Plasmid for conversion
+                            <br>* Required medium (LB medium)
+                            <br>* Corresponding antibiotic tablets (ampicillin resistance)
+                            <br>Experimental procedure:
+                            <br>Add 10 microliters of plasmid to 100 microliters of receptive cells and take an ice bath for 30 minutes (if the conversion efficiency is high, try adding 10 UL of plasmid to 20ul of receptive cells, and then reduce the corresponding incubation medium (LB) accordingly).
+                            <br>Water bath at 42 degrees for 60 seconds, then ice bath for 1 minute
+                            <br>Add 1mL medium and culture at 37 ℃ for 1h
+                            <br>Coated Antibiotic plate (100ul Bacterial solution coating)
+                            <br>Single colonies were selected and propagated in 5mlLB medium, and then stored in glycerol tube.
+                            
+                            
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <h4 id="list-item-3">3. Detection methods</h4>
+                <div class="container">
+                    <div>
+                        <p>1.OPA method for cholesterol detection</p>
+                        <div class="container">
+                            <br>Experimental material and concentration
+                            <br>* Sample solution
+                            <br>*0.1mg/ml cholesterol working fluid
+                            <br>* Mixed acid (concentrated sulfuric acid: glacial acetic acid =1:1)
+                            <br>* Methanol
+                            <br>Experimental procedure:
+                            <br>First, the standard curve was obtained: 9 gradients of 0ml-0.4ml cholesterol working solution were successively taken, and 4ml mixed acid and 0.2ml phthalaldehyde were added to each gradient, and the volume of each gradient was supplemented to 4.6ml with methanol. The order of adding sample is working liquid, methanol, phthalaldehyde, mixed acid.
+                            <br>After adding the sample, mix it well, leave it for 20min, and measure the light absorption value at 550nm.
+                            <br>Sample testing: Use methanol to dilute the sample, based on the initial cholesterol content of the test medium, so that it is less than the maximum cholesterol concentration of the standard curve.
+                            <br>Take 0.4ml of diluted sample, add 0.2ml of phthalic aldehyde, then add 4ml of mixed acid, mix evenly, stand for 20min, and measure the absorption value at 550nm.
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <p>2.BSH plate inoculation experiment (bile brine hydrolysis enzyme detection)</p>
+                        <div class="container">
+                            Experimental material and concentration
+                            * Bacterial solution to be tested
+                            *MRS Test medium
+                            * Sterile filter paper
+                            Experimental procedure:
+                            Several pieces of sterile filter paper were placed on MRS Test medium, and 10ul bacterial solution was inoculated on one filter paper. After inoculation, culture was performed for 24h and precipitation ring formation was recorded.
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <p>3.GC method for detection of short-chain fatty acids</p>
+                        <div class="container">
+                            <br>Experimental materials and concentrations and instruments
+                            <br>* Bacterial solution to be tested
+                            <br>* Acetic acid, propionic acid, butyric acid and 2-ethylbutyric acid are chromatographically pure.
+                            <br>* Shimadzu GC-2010 Plus Gas chromatograph with hydrogen Flame ionization detector (FID); Rtx-Wax elastic quartz capillary column (30m×0.25mm, 0.25μm).
+                            <br>* Standard concentration: acetic acid 4.16 mmol/L, propionic acid 3.37 mmol/L, butyric acid 2.84 mmol/L,
+                            <br>* Internal standard: 2-ethylbutyric acid 2.21 mmol/L
+                            <br>Experimental procedure:
+                            <br>Detection conditions: DB-FFAP 122-3232 elastic quartz capillary column (30m×0.25mm, 0.25μm) was selected for GC analysis. AOC 20i automatic sampler with FID detector. The pressure of hydrogen, nitrogen, and air is 0.4MPa. Programmed temperature setting: Initial temperature 100°C, temperature rise to 180°C at 10°C /min, hold for 20min, temperature rise to 230°C at 20°C /min, the total analysis time is 18min. The inlet temperature is 230°C; Detector temperature 250°C, shunt ratio: 1:10.
+                            <br>Sample preparation
+                            <br>Take 500ul bacterial solution and centrifuge at 4 ° C at 10000 g for 2min
+                            <br>Sample solution was obtained by taking the supernatant and filtering with 0.22um filter membrane
+                            <br>Detection
+                            <br>Take 40ul of sample solution, add 10ul of 2-ethylbutyric acid, mix well, and take 1ul of sample for testing. (Treatment of the standard before sample testing (operation with the sample solution, so that the concentration of 2-ethylbutyric acid is consistent with the sample solution) and injection)
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <p>4. Gene expression was detected with enzyme label</p>
+                        <div class="container">
+                            <br>Strains containing the mRFP reporter gene were inoculated into 24-well plates of the required medium. After 12-16 hours of culture, fluorescence and absorbance were measured by Thermo Fisher Scientific (USA) to test the expression function.
+                        </div>
+                    </div>
+
+                </div>
+                <h4 id="list-item-4">4. functional verification</h4>
+                <div class="container">
+                    <div>
+                        <p>1. Culture before detection</p>
+                        <div class="container">
+                            <br>The strains containing IsmA gene were activated first, and then transferred to BCM medium (5ml) with 0.2g/l cholesterol concentration for 48h to prepare for cholesterol content change detection.
+                            <br>Strains containing BSH gene were inoculated in MRS Medium for 12h-24h to prepare for BSH plate inoculation experiment.
+                            <br>The strains containing BSH gene were activated first, and then transferred to M9 medium (5ml) containing 0.02g/l cholesterol and 0.1g/l bile salt, the only carbon source of deglucosed cholesterol, for 48h to prepare for cholesterol content change detection.
+                            <br>Strains containing BCoAT gene were inoculated in LB medium for 24h to prepare for detection of short-chain fatty acids by GC.
+                            <br>The affected strains containing pSB1T3-FadR-FadB gene were inoculated into 24-well plates supplemented with oleic acid-M9 medium and basic M9 medium, and all the bacteria were cultured aerobic and anaerobic for 12-16 hours, respectively, to prepare the gene expression degree detection by enzyme labeler.
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <p>2. Function test</p>
+                        <div class="container">
+                            <br>                            Strains containing IsmA gene or BSH gene for cholesterol detection were cultured in the corresponding medium for 48h, diluted with 5ml methanol in the bacterial solution, shaken well, and sampled to detect cholesterol content by OPA method. The culture medium without added bacteria was used as blank control, and EcN bacteria and empty plasmid transforming bacteria were used as Yin and Yang control.
+                            <br>After the preparation of BSH plate inoculation experiment was completed, BSH qualitative plate inoculation experiment was carried out. EcN bacteria were compared with empty plasmid bacteria.
+                            <br>After the strains containing GC gene were cultured, GC detection was performed to detect the content of short-chain fatty acids.
+                            
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+</div>
+
+
+<!-- 页脚 -->
+<div style="max-width:100%;">
+    <footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-white">
+        <div class="container">
+            <div class="row mb-4" style="white-space: nowrap;">
+                <div class="col" style="overflow-y: scroll;">
+                    <h4 class="mb-3">About Us</h4>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12 text-center">
+                            <img src="../../static/logo-lzu.png" height="100px" class="mr-4">
+                            <a>Lanzhou University</a>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img src="../../static/logo-scol.png" height="100px" class="mr-4">
+                            <a>School of Life Science , LZU</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-12">
+                    <h4 class="mt-lg-0 mt-sm-4 mb-3">Contact</h4>
+                    <p>No. 222, Tianshui South Road, Chengguan District, Lanzhou City, Gansu Province,730000, P. R.
+                        China.</p>
+                    <p><b>E-mail:</b> <a href="mailto:susu2969@foxmail.com">susu2969@foxmail.com</a></p>
+                </div>
+            </div>
+            <hr>
+    </footer>
+    <script src="../../js/bootstrap.bundle.js"></script>
+
+</div>
+</body>
