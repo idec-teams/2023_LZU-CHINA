@@ -37,7 +37,29 @@
 </head>
 
 <body>
-
+    <style>
+        .container{
+            margin-top:30px;
+        }
+        .main .container div:first-child{
+            font-size:2em;
+            font-weight:bolder;
+        }
+        .main .container .container{
+            font-size:1.2em;
+        }
+        .container h1{
+            font-weight: bolder;
+            padding:3px;
+            border-bottom: 2px solid ;
+        }
+        .img-fluid{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+        }
+        .figure-caption{
+            color:rgb(66, 66, 66);
+        }
+    </style>
     <!-- 导航栏 -->
     <nav class="navbar" style="background-color:rgb(0, 0, 0);">
         <div class="container-fluid">
@@ -60,7 +82,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="../project/background.html">Background </a></li>
                         <li><a class="dropdown-item" href="../project/design.html">Design </a></li>
-                        <li><a class="dropdown-item" href="../project/report.html">Results </a></li>
+                        <li><a class="dropdown-item" href="../project/result.html">Results </a></li>
                         <li><a class="dropdown-item" href="../project/model.html">Model </a></li>
                         <li><a class="dropdown-item" href="../project/future.html">Future</a></li>
                         <li><a class="dropdown-item" href="../project/report.html">Report</a></li>
@@ -75,31 +97,30 @@
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                         aria-expanded="false">Documentation</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../documentation/protocol.html">Protovol</a></li>
+                        <li><a class="dropdown-item" href="../documentation/protocol.html">Protocol</a></li>
                         <li><a class="dropdown-item" href="../documentation/notebook.html">Notebook</a></li>
                         <li><a class="dropdown-item" href="../documentation/safety.html">Safety</a>
                         </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="./pages/Documentation/Separated.html">Separated link</a></li>
                     </ul>
                 </li>
             </ul>
     </nav>
+
     <!--  本页内容 -->
     <div class="main">
         <div class="container">
             <h1>Model</h1>
         </div>
-
-        <div class="container" style="margin-bottom: 30px;">
-            <h2>
+        <div class="container">
+            <div>
                 The oleic acid induction system Model
-            </h2>
-            <h3>
+            </div>  
+        </div>
+    
+        <div class="container">
+            <div>
                 Mechanism
-            </h3>
+            </div>
             <div class="container">
                 Oleic acid → acyl-CoA A → FadR protein departs from promoter PfadB → gene expresses normally, β-oxidation initiates.
             </div>
@@ -110,15 +131,18 @@
                 <figure class="figure">
                     <img src="../../static/model/2phenotype.png" class="figure-img img-fluid rounded img-thumbnail" alt="..."
                         style="width:70%;">
+                </figure>
             </div>
-
             <div class="container">
                 From the oleic acid induction mechanism, we can divide the expression of the FadR promoter into the following two scenarios:
             </div>
             <div class="container">
                 The balance of oleic acid synthesis metabolism and decomposition metabolism in microorganisms is controlled by the transcriptional regulatory factor FadR. In the absence of oleic acid, it's a Growth phenotype with native negative autoregulation (NAR)  . At this time, fatty acid synthesis metabolism is activated. FadR binds to the promoter p-fadB of the bacterial β-oxidation pathway gene fadO, inhibiting the expression of fadO, thereby inhibiting bacterial β-oxidation. In the presence of excess oleic acid, it's a Production phenotype with engineered positive autoregulation (PAR) . Fatty acid degradation metabolism is activated. After FadR couples with oleic acid, it departs from the promoter p-fadB of fadO, allowing fadO expression, and bacterial β-oxidation is completed.
             </div>
-            <h3>Model Assumptions</h3>
+        </div>
+
+        <div class="container">
+            <div>Model Assumptions</div>
 
             <div class="container">
                 1. The activation state of the oleic acid inducer (corresponding to the presence/absence of oleic acid environment) can be determined by the concentration of the regulator FadR. The expression of the product synthesis enzyme and the synthesis of the product itself depend on the control factor FadR. Therefore, we only define the state of the oleic acid inducer by the concentration of FadR.<br>
@@ -128,7 +152,9 @@
                 5. Enzymes and transcription factors do not undergo active degradation. To  our knowledge, proteins in the system we study are not actively  degraded. Over the duration of cell doubling, protein dilution through  cell growth and division is the main way proteins are lost from the  system, so we model the decay of protein $E$ as growth dilution $\lambda \cdot E$:
 
             </div>
-            <h3>Model Establishment</h3>
+        </div>
+        <div class="container">
+            <div>Model Establishment</div>
             <div class="container">
                 Our endogenous system model is inspired by the model of Ahmad A. Mannan et al.[1] and the model of Hartline et al.[2], which models the expression rates of the transcription factor FadR, uptake enzyme FadD, and growth-related enzyme $E_g$ [5] using Hill functions as $r_{\mathrm{x}, \mathrm{R}}=P_{\mathrm{R}}(R), r_{\mathrm{x}, \mathrm{D}}=P_{\mathrm{D}}(D)$, $r_{\mathrm{x}, \mathrm{E}_{\mathrm{g}}}=P_{\mathrm{g}}\left(g\right)$. The reaction kinetics of FadD $\left(r_{\mathrm{D}}\right)$ and the reaction kinetics of the acyl-CoA-consuming reaction PIsB $\left(r_{\mathrm{B}}\right)$ are modeled as Michaelis-Menten equations, resulting in:
             </div>
@@ -180,7 +206,9 @@
             \frac{d F}{d t} & =r_{\mathrm{seq}}.
             \end{aligned}
             $$
-            <h3>Model Simulation</h3>
+        </div>
+        <div class="container">
+            <div>Model Simulation</div>
             <div class="container">
                 To validate the feasibility of the above model, we wrote the corresponding model code in Matlab, simulating the continuous introduction of oleic acid (OA). The selection of model parameters was based on data from references [1,2]. We simulated the temporal changes of model variables under the conditions of natural circuits (red curve) and engineered oleic acid inducer circuits (blue curve). In the first subplot, we compared the concentrations between FadR(R) and OA, where the black dashed line represents the activation threshold of the oleic acid inducer. The second subplot compares the relationship between Total FadR and the sequestered complex (C). The third subplot reflects the concentration of acyl-CoA (A) over time.
             </div> 
@@ -197,6 +225,9 @@
             <div class="container">
                 From the figures, it can be observed that the introduction of the oleic acid inducer accelerates the decomposition process of OA, causing its concentration to decrease at a faster rate, which also proves the effectiveness of the oleic acid inducer.
             </div> 
+        </div>
+        <div class="container">
+            <div>Model expansion with additional FadO operators</div>
             <div class="container" style="text-align: center;">
                 <figure class="figure">
                     <img src="../../static/model/fado.png" class="figure-img img-fluid rounded img-thumbnail" alt="..."
@@ -221,35 +252,47 @@
             <div class="container">
                 In the model simulation graphs, we observe that compared to the original oleic acid inducer, the new version with added FadO operators delays the decomposition rate of OA. At the same time, the threshold at which the oleic acid inducer activates FadR is lower. Given that acyl-CoA (A)  reacts with FadR, this suggests that a higher threshold of oleic acid  decomposition is required to produce acyl-CoA (A). This is consistent  with our theoretical predictions. The results validate that by  increasing the FadO operators, we can precisely control the response  threshold of the oleic acid inducer, making it adaptable for different scenarios.
             </div> 
-            <div class="container">
-                Similarly, we conducted model simulations to verify the feasibility of  the aforementioned operation. Specifically, we utilized an alternative  approach, adjusting the affinity of FadR to inhibit Ep synthesis within our system, to emulate the effects of modifying the FadO operators. A  higher affinity mimics the impact of having additional FadO operators,  necessitating a higher oleic acid concentration to activate the  promoter, and vice versa.
-            </div> 
-            <h3>References</h3>
-            [1] Mannan, A.A., Bates, D.G. Designing an irreversible metabolic switch for scalable induction of microbial chemical production.                    Nat Commun 12, 3419 (2021). <br>
-
-[2] Hartline, C., Mannan, A., Liu, D., Zhang, F. & Oyarz´un, D. Metabolite sequestration enables rapid recovery from fatty acid depletion in Escherichia coli. mBio (2020).<br>
-
-[3] Usui, Y. et al. Investigating the effects of perturbations to pgi and eno gene expression on central carbon metabolism in Escherichia coli using 13 C metabolic flux analysis. Microbial Cell Factories 11, 1–5 (2012).<br>
-
-[4] Mannan, A. A., Liu, D., Zhang, F. & Oyarz´un, D. A. Fundamental design principles for transcription-factor-based metabo-lite biosensors. ACS Synthetic Biology 6, 1851–1859 (2017).<br>
-
-[5] Janßen, H. J. & Steinb¨uchel, A. Fatty acid synthesis in Escherichia coli and its applications towards the production of fatty acid based biofuels. Biotechnology for biofuels 7, 7 (2014).<br>
-
-[6] Marino, S., Hogue, I. B., Ray, C. J. & Kirschner, D. E. A methodology for performing global uncertainty and sensitivity analysis in systems biology. Journal of Theoretical Biology 254, 178–196 (2008).<br>
-
-[7] Bertram, R. & Hillen, W. The application of Tet repressor in prokaryotic gene regulation and expression. Microbial Biotechnology 1, 2–16 (2008).<br>
-
-[8] Rohatgi, A. WebPlotDigitizer (2020). URL https://automeris.io/WebPlotDigitizer.<br>
-
-[9] Kamionka, A., Bogdanska-Urbaniak, J., Scholz, O. & Hillen, W. Two mutations in the tetracycline repressor change the inducer anhydrotetracycline to a corepressor. Nucleic Acids Research 32, 842–847 (2004).<br>
-
-[10] Gardner, T. S., Cantor, C. R. & Collins, J. J. Construction of a genetic toggle switch in Escherichia coli. Nature 403,339–342 (2000).<br>
-
-[11] Xu, J. & Matthews, K. S. Flexibility in the Inducer Binding Region is Crucial for Allostery in the Escherichia coli Lactose Repressor. Biochemistry 48, 4988–4998.<br>
         </div>
 
+        <div class="container">
+            <div>References</div>
+            <div class="container">
+                                [1] Mannan, A.A., Bates, D.G. Designing an irreversible metabolic switch for scalable induction of microbial chemical production.                    Nat Commun 12, 3419 (2021). <br>
 
+                    [2] Hartline, C., Mannan, A., Liu, D., Zhang, F. & Oyarz´un, D. Metabolite sequestration enables rapid recovery from fatty acid depletion in Escherichia coli. mBio (2020).<br>
+
+                    [3] Usui, Y. et al. Investigating the effects of perturbations to pgi and eno gene expression on central carbon metabolism in Escherichia coli using 13 C metabolic flux analysis. Microbial Cell Factories 11, 1–5 (2012).<br>
+
+                    [4] Mannan, A. A., Liu, D., Zhang, F. & Oyarz´un, D. A. Fundamental design principles for transcription-factor-based metabo-lite biosensors. ACS Synthetic Biology 6, 1851–1859 (2017).<br>
+
+                    [5] Janßen, H. J. & Steinb¨uchel, A. Fatty acid synthesis in Escherichia coli and its applications towards the production of fatty acid based biofuels. Biotechnology for biofuels 7, 7 (2014).<br>
+
+                    [6] Marino, S., Hogue, I. B., Ray, C. J. & Kirschner, D. E. A methodology for performing global uncertainty and sensitivity analysis in systems biology. Journal of Theoretical Biology 254, 178–196 (2008).<br>
+
+                    [7] Bertram, R. & Hillen, W. The application of Tet repressor in prokaryotic gene regulation and expression. Microbial Biotechnology 1, 2–16 (2008).<br>
+
+                    [8] Rohatgi, A. WebPlotDigitizer (2020). URL https://automeris.io/WebPlotDigitizer.<br>
+
+                    [9] Kamionka, A., Bogdanska-Urbaniak, J., Scholz, O. & Hillen, W. Two mutations in the tetracycline repressor change the inducer anhydrotetracycline to a corepressor. Nucleic Acids Research 32, 842–847 (2004).<br>
+
+                    [10] Gardner, T. S., Cantor, C. R. & Collins, J. J. Construction of a genetic toggle switch in Escherichia coli. Nature 403,339–342 (2000).<br>
+
+                    [11] Xu, J. & Matthews, K. S. Flexibility in the Inducer Binding Region is Crucial for Allostery in the Escherichia coli Lactose Repressor. Biochemistry 48, 4988–4998.<br>
+                    
+        </div>
+
+        <!-- 页码 -->
+        <div class="container">
+            <div class="d-grid gap-2 d-md-flex justify-content-between">
+                <a href="../project/result.html" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">previous page</a>
+                <a href="../project/future.html" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">next page</a>
+              </div>
+        </div>
+            </div>
     </div>
+
+
+
 
 
     <!-- 页脚 -->

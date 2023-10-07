@@ -21,12 +21,32 @@
 
 <body>
     <style>
+        .container{
+            margin-top:30px;
+        }
+        .main .container div:first-child{
+            font-size:2em;
+            font-weight:bolder;
+        }
+        .main .container .container{
+            font-size:1.2em;
+        }
+        .container h1{
+            font-weight: bolder;
+            padding:3px;
+            border-bottom: 2px solid ;
+        }
+        .img-fluid{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+        }
+        .figure-caption{
+            color:rgb(66, 66, 66);
+        }
         iframe{
             height: 70vh;
             width:40vw;
         }
     </style>
-
         <!-- 导航栏 -->
         <nav class="navbar" style="background-color:rgb(0, 0, 0);">
             <div class="container-fluid">
@@ -64,14 +84,10 @@
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                             aria-expanded="false">Documentation</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../documentation/protocol.html">Protovol</a></li>
+                            <li><a class="dropdown-item" href="../documentation/protocol.html">Protocol</a></li>
                             <li><a class="dropdown-item" href="../documentation/notebook.html">Notebook</a></li>
                             <li><a class="dropdown-item" href="../documentation/safety.html">Safety</a>
                             </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./pages/Documentation/Separated.html">Separated link</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -84,6 +100,14 @@
             <iframe src="../../static/report/Report.pdf"></iframe>
         </div>
     </div>
+    <!-- 页码 -->
+    <div class="container">
+        <div class="d-grid gap-2 d-md-flex justify-content-between">
+            <a href="../project/future.html" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">previous page</a>
+            <a href="../project/supplementary.html" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">next page</a>
+            </div>
+    </div>
+    
 </div>
 
 

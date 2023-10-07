@@ -17,7 +17,29 @@
 </head>
 
 <body>
-
+    <style>
+        .container{
+            margin-top:30px;
+        }
+        .main .container div:first-child{
+            font-size:2em;
+            font-weight:bolder;
+        }
+        .main .container .container{
+            font-size:1.2em;
+        }
+        .container h1{
+            font-weight: bolder;
+            padding:3px;
+            border-bottom: 2px solid ;
+        }
+        .img-fluid{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+        }
+        .figure-caption{
+            color:rgb(66, 66, 66);
+        }
+    </style>
     <!-- 导航栏 -->
     <nav class="navbar" style="background-color:rgb(0, 0, 0);">
         <div class="container-fluid">
@@ -55,14 +77,10 @@
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                         aria-expanded="false">Documentation</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../documentation/protocol.html">Protovol</a></li>
+                        <li><a class="dropdown-item" href="../documentation/protocol.html">Protocol</a></li>
                         <li><a class="dropdown-item" href="../documentation/notebook.html">Notebook</a></li>
                         <li><a class="dropdown-item" href="../documentation/safety.html">Safety</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="./pages/Documentation/Separated.html">Separated link</a></li>
+                        </li>   
                     </ul>
                 </li>
             </ul>
@@ -74,9 +92,9 @@
         </div>
 
         <div class="container" style="margin-bottom: 30px;">
-            <h2>
+            <div>
                 Functional validation and model establishment of oleic acid promoter
-            </h2>
+            </div>
             <div class="container">
                 We characterized the expression of the oleic acid promoter by placing the mRFP fluorescent protein under
                 the control of the FadR promoter. The engineered bacteria transformed with oleic acid promoter gene were
@@ -129,14 +147,14 @@
 
 
         <div class="container">
-            <h2>Screening of engineered bacteria with the best effect</h2>
+            <div>Screening of engineered bacteria with the best effect</div>
             <div class="container">
                 In order to obtain the optimal combination of genotypes for cholesterol degradation, the IsmA, BSH and
                 BCoAT genes were arranged and combined to obtain the following six genotypes: IsmA, BSH, BCoAT,
                 isma-bsh, ISma-Bcoat, ISma-Bsh-Bcoat. Its ability to down-regulate cholesterol content was tested by
                 different methods.
             </div>
-            <div>The cholesterol-lowering effect of IsmA gene was characterized by measuring the cholesterol content of
+            <div class="container">The cholesterol-lowering effect of IsmA gene was characterized by measuring the cholesterol content of
                 the medium by OPA method after the strain containing IsmA gene was cultured in basal cholesterol medium
                 for 48 hours. The results are shown in Figure 3. The efficiency of cholesterol degradation was up to
                 30%.</div>
@@ -149,7 +167,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <div>In addition, for the BSH gene, we evaluated the effect of different gene combinations on bile saline
+            <div class="container">In addition, for the BSH gene, we evaluated the effect of different gene combinations on bile saline
                 hydrolysis. In this process, all the combinations of effect genes showed good bile saline hydrolysis
                 effect, and obvious precipitation rings appeared around the filter paper on the medium (<b>Figure
                     4</b>). In the dynamic observation of the whole process of precipitation ring formation, we found
@@ -167,7 +185,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <div>In the detection process of the above two rounds of experiments, the recombined genes showed different
+            <div class="container">In the detection process of the above two rounds of experiments, the recombined genes showed different
                 expression advantages compared with their own genes. Therefore, we continued to detect the expression of
                 SCFA module for BCoAT gene. In the evaluation of SCFA production, we detected three indicators:
                 butyrate, acetate, and propionic acid.<br>
@@ -184,7 +202,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <div>In acetic acid assays, the BCoAT single gene showed acetic acid production, but it was not statistically significant (<b>Figure 6</b>)." However, other functional gene combinations showed little ability to produce acetic acid (<b>Figure 6</b>). In the functional genome comparison, the BCoAT gene was significantly different from the triplet (IsmA-BSH-BCoAT) gene in acetate production capacity (<b>Figure 6</b>). This part shows the outstanding acetic acid production ability of the BCoAT single gene, but it is not completely convincing.</div>
+            <div class="container">In acetic acid assays, the BCoAT single gene showed acetic acid production, but it was not statistically significant (<b>Figure 6</b>)." However, other functional gene combinations showed little ability to produce acetic acid (<b>Figure 6</b>). In the functional genome comparison, the BCoAT gene was significantly different from the triplet (IsmA-BSH-BCoAT) gene in acetate production capacity (<b>Figure 6</b>). This part shows the outstanding acetic acid production ability of the BCoAT single gene, but it is not completely convincing.</div>
             <div class="container" style="text-align: center;">
                 <figure class="figure">
                     <img src="../../static/result/7.png" class="figure-img img-fluid rounded img-thumbnail" alt="..."
@@ -193,7 +211,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <div>In the detection of propionic acid, the BCoAT gene showed good propionic acid production characteristics with statistical significance compared with the control group, and in the comparison between effector genomes, it showed significant difference with the triplet (IsmA-BSH-BCoAT). "Other effector gene composition types, however, do not reflect this propionic acidogenic property (<b>Figure 7</b>).</div>
+            <div class="container">In the detection of propionic acid, the BCoAT gene showed good propionic acid production characteristics with statistical significance compared with the control group, and in the comparison between effector genomes, it showed significant difference with the triplet (IsmA-BSH-BCoAT). "Other effector gene composition types, however, do not reflect this propionic acidogenic property (<b>Figure 7</b>).</div>
             <div class="container" style="text-align: center;">
                 <figure class="figure">
                     <img src="../../static/result/8.png" class="figure-img img-fluid rounded img-thumbnail" alt="..."
@@ -202,9 +220,16 @@
                     </figcaption>
                 </figure>
             </div>
-            <div>In summary, it seems that in the targeted evolution of cholesterol down-regulation, different genotypes still show differences and complexity in their ability to regulate cholesterol levels. Although the combination of the three genes in tandem gave strong performance in the direct cholesterol degradation by IsmA and the down-regulation of cholesterol by bile-salt hydrolases secreted by the BSH genes, this does not mean that they can perform equally well in the regulation through short-chain fatty acids (SFAs). The optimal evolutionary pathway still needs to be evaluated and determined, and perhaps a more precise answer can be obtained in subsequent in vivo experiments.</div>
+            <div class="container">In summary, it seems that in the targeted evolution of cholesterol down-regulation, different genotypes still show differences and complexity in their ability to regulate cholesterol levels. Although the combination of the three genes in tandem gave strong performance in the direct cholesterol degradation by IsmA and the down-regulation of cholesterol by bile-salt hydrolases secreted by the BSH genes, this does not mean that they can perform equally well in the regulation through short-chain fatty acids (SFAs). The optimal evolutionary pathway still needs to be evaluated and determined, and perhaps a more precise answer can be obtained in subsequent in vivo experiments.</div>
         </div>
 
+    <!-- 页码 -->
+    <div class="container">
+        <div class="d-grid gap-2 d-md-flex justify-content-between">
+            <a href="../project/design.html" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">previous page</a>
+            <a href="../project/model.html" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">next page</a>
+          </div>
+    </div>
     </div>
 
 

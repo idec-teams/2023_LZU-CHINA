@@ -17,6 +17,26 @@
 </head>
 
 <body>
+  <style>
+    .title-1{
+      font-size: 3em;
+      background: -webkit-linear-gradient(left, rgb(251, 255, 0), rgb(255, 0, 0)) 0 0 no-repeat;/*设置线性渐变*/
+		    background-size: 150px 100%;                        /*设置背景大小*/
+		    -webkit-background-clip: text;              /*背景被裁剪到文字*/
+        -webkit-transform: skewX(-10deg);              /* 设置倾斜 */
+		    -webkit-text-fill-color: rgba(255, 255, 255, 0.3);        /*设置文字的填充颜色*/
+		    -webkit-animation: shine 3s infinite; 
+    }
+      @-webkit-keyframes shine{   /*创建动画*/
+      0%{
+          background-position: 0 0;
+      }
+      100%{
+          background-position: 100% 100%;
+      }
+		}
+  </style>
+
   <nav class="navbar" style="background-color:rgb(0, 0, 0);">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" style="color:white">2023-lzu-china</a>
@@ -56,9 +76,6 @@
               <li><a class="dropdown-item" href="./pages/documentation/notebook.html">Notebook</a></li>
               <li><a class="dropdown-item" href="./pages/documentation/safety.html">Safety</a>
               </li>
-              <li>
-                  <hr class="dropdown-divider">
-              </li>
 
           </ul>
         </li>
@@ -70,21 +87,27 @@
     <div class="text-center" style="background-color: rgba(0, 0, 0, 0.63);">
       <div class="row" style="height:100vh">
         <div class="col align-self-center">
-          <h1 style="color:white">
-            Exploring a transformative model for preventing<br>
-            hypercholesterolaemia: directed evolution <br>
-            of E.coli Nissle 1917 to obtain gene combinations<br>
-            with superior cholesterol-regulating effects<br>
-          </h1>
+          <div class="container">
+            <h1 class="title-1" style="color:white">
+              Exploring a transformative model for preventing
+              hypercholesterolaemia: directed evolution 
+              of E.coli Nissle 1917 to obtain gene combinations
+              with superior cholesterol-regulating effects
+            </h1>
+          </div>
+
         </div>
       </div>
     </div>
     <div class=" text-center" style="background-color:rgb(48, 47, 47);">
       <div class="row" style="height:100vh">
         <div class="col align-self-center">
-          <h2 style="color:white">
-            introduction
-          </h2>
+          <div class="container">
+            <h2 style="color:white;margin-bottom: 20px;border-bottom: 3px solid white; font-size: 3em;padding-bottom: 10px;">
+              introduction
+            </h2>
+          </div>
+
           <div class="container">
             <div style="color:white;">
               Cardiovascular disease has been a serious threat to public health for a long time and is one of the common

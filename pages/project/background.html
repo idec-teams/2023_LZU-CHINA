@@ -21,8 +21,22 @@
             margin-top:30px;
         }
         .main .container div:first-child{
-            font-size:large;
+            font-size:2em;
             font-weight:bolder;
+        }
+        .main .container .container{
+            font-size:1.2em;
+        }
+        .container h1{
+            font-weight: bolder;
+            padding:3px;
+            border-bottom: 2px solid ;
+        }
+        .img-fluid{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+        }
+        .figure-caption{
+            color:rgb(66, 66, 66);
         }
     </style>
 
@@ -63,14 +77,10 @@
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                             aria-expanded="false">Documentation</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../documentation/protocol.html">Protovol</a></li>
+                            <li><a class="dropdown-item" href="../documentation/protocol.html">Protocol</a></li>
                             <li><a class="dropdown-item" href="../documentation/notebook.html">Notebook</a></li>
                             <li><a class="dropdown-item" href="../documentation/safety.html">Safety</a>
                             </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./pages/Documentation/Separated.html">Separated link</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -78,6 +88,9 @@
 <div class="main">
     <div>
         <img src="../../static/background/one.png" class="img-fluid" alt="..." style="width:100%">
+    </div>
+    <div class="container">    
+        <h1>Background</h1>
     </div>
     <div class="container">
         <div>
@@ -172,8 +185,15 @@
             <br>  [4]	Nussbaumerová B, Rosolová H. Epidemiologie hypercholesterolemie [Epidemiology of hypercholesterolemia]. Vnitr Lek. 2018 Winter;64(1):30-37. Czech. PMID: 29498873.
             <br>   [5]	Fu J, Bonder MJ, Cenit MC, Tigchelaar EF, Maatman A, Dekens JA, Brandsma E, Marczynska J, Imhann F, Weersma RK, Franke L, Poon TW, Xavier RJ, Gevers D, Hofker MH, Wijmenga C, Zhernakova A. The Gut Microbiome Contributes to a Substantial Proportion of the Variation in Blood Lipids. Circ Res. 2015 Oct 9;117(9):817-24. doi: 10.1161/CIRCRESAHA.115.306807. Epub 2015 Sep 10. PMID: 26358192; PMCID: PMC4596485.
             <br>  [6]	Jie Z, Xia H, Zhong SL, Feng Q, Li S, Liang S, Zhong H, Liu Z, Gao Y, Zhao H, Zhang D, Su Z, Fang Z, Lan Z, Li J, Xiao L, Li J, Li R, Li X, Li F, Ren H, Huang Y, Peng Y, Li G, Wen B, Dong B, Chen JY, Geng QS, Zhang ZW, Yang H, Wang J, Wang J, Zhang X, Madsen L, Brix S, Ning G, Xu X, Liu X, Hou Y, Jia H, He K, Kristiansen K. The gut microbiome in atherosclerotic cardiovascular disease. Nat Commun. 2017 Oct 10;8(1):845. doi: 10.1038/s41467-017-00900-1. PMID: 29018189; PMCID: PMC5635030.
-            
         </div>
+       
+    <!-- 页码 -->
+    <div class="container">
+        <div class="d-grid gap-2 d-md-flex justify-content-between">
+            <a href="#" class="btn btn-outline-secondary disabled" tabindex="-1" role="button" aria-disabled="true">previous page</a>
+            <a href="../project/design.html" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">next page</a>
+          </div>
+    </div>
         
     </div>
 </div>

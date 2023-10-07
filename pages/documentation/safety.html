@@ -18,13 +18,26 @@
 
 <body>
     <style>
-        .container {
-            margin-top: 30px;
+        .container{
+            margin-top:30px;
         }
-
-        .main .container div:first-child {
-            font-size: large;
+        .main .container div:first-child{
+            font-size:2em;
+            font-weight:bolder;
+        }
+        .main .container .container{
+            font-size:1.2em;
+        }
+        .container h1{
             font-weight: bolder;
+            padding:3px;
+            border-bottom: 2px solid ;
+        }
+        .img-fluid{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+        }
+        .figure-caption{
+            color:rgb(66, 66, 66);
         }
     </style>
     <!-- 导航栏 -->
@@ -64,22 +77,22 @@
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                         aria-expanded="false">Documentation</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../documentation/protocol.html">Protovol</a></li>
+                        <li><a class="dropdown-item" href="../documentation/protocol.html">Protocol</a></li>
                         <li><a class="dropdown-item" href="../documentation/notebook.html">Notebook</a></li>
                         <li><a class="dropdown-item" href="../documentation/safety.html">Safety</a>
                         </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="./pages/Documentation/Separated.html">Separated link</a></li>
                     </ul>
                 </li>
             </ul>
     </nav>
     <div class="main">
+
         
         <div class="container">
             <h1>Satety</h1>
+
+        </div>
+        <div class="container">
             <div> Overview</div>
             <div class="container">Our team always puts experimental safety and risk control first in our projects and
                 actions. After all, safety is the most important thing. We consider safety throughout the project,
